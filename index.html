@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="login-page">
+        <div class="login-container">
+            <div class="left-container">
+                <h1>Sing in to developer!</h1>
+                <div class="icons">
+                    <a href="#" class="google"><i class="fab fa-google"></i></a>
+                    <a href="#" class="github"><i class="fab fa-github"></i></a>
+                    <a href="#" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                </div>
+                <div class="form-container">
+                    <h5>Or use your e-mail account.</h5>
+                <form onsubmit="loginObj.login()">
+                    <div class="input-group">
+                        <input type="text" id="userEmail" name="userEmail" placeholder="User Email" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                    </div>
+                    <button class="submit-button" type="submit">Login</button>
+                </form>   
+            </div> 
+            </div>
+            <div class="right-container">
+            <h1>Welcome Back!</h1>
+            <p>To keep connected with us please login with your personal info</p>
+            <button onclick="window.location.href='register'">Sing Up!</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
